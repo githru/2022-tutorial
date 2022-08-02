@@ -1,2 +1,3 @@
-const { gitLogToJsonParser } = require("./gitLogToJsonParser");
+import { gitLogToJsonParser } from "./gitLogToJsonParser";
+
 gitLogToJsonParser();
