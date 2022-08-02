@@ -1,5 +1,8 @@
-type AppleStockDataType = { data: string; value: number }[];
+interface AppleStockColumnType {
+    date: Date;
+    close: number;
+}
 
-type AppleStockColumnType = 'date' | 'close';
+type AppleStockDataType = AppleStockColumnType[] & { columns?: Array<keyof AppleStockColumnType> };
 
 export type { AppleStockDataType, AppleStockColumnType };
